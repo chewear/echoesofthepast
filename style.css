@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+}
+/*
+#fa2d40 - red
+#1c1c21 - black
+#f9f9f9 - white
+*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #1c1c21;
+    color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: #1c1c21bb;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo{
+    width: 33%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+}
+
+.nav{
+    width: 33%;
+}
+
+.logo img{
+    width: 10%;
+    filter: brightness(0) invert(1);
+}
+
+.logo h1{
+    color: #f9f9f9 !important;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul{
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+
+.nav ul:hover{
+    color: #fa2d40;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+.dl-button{
+    width: 33%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.dl-button button{
+    background-color: #fa2d40;
+    width: 20%;
+    height: 5vh;
+    border: none;
+    border-radius: 8px;
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.dl-button button:hover{
+    background-color: #e21e31;
+}
+
+.teaser{
+    padding-left: 0 !important;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+#videoPlayer{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.teaser{
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+.play{
+    display: flex;
+    border: transparent;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.play img{
+    width: 64px;
+}
+
+.concept{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50vh;
+}
+
+.left img{
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+    object-position: top right;
+    border-radius: 16px;
+}
+
+.left{
+    width: 50%;   
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+h1{
+    color: #fa2d40;
+}
+
+.imageright{
+    width: 50%;   
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.right p{
+    padding: 0;
+    margin: 0;
+}
+
+.sb{
+    margin-top: 5%;
+}
+
+.gameplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.storyboard{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.videoPlayer{
+    width: 60vw;
+    border-radius: 32px;
+}
+
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(res/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.4) blur(4px);
+}
+
+.mechanics{
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.videoPlayerM{
+    width: 40rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+
+.cover1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-image: url(res/mech.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.4) blur(4px);
+}
+
+.downloader{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.gameDemo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.gameDemoContainer{
+    border-radius: 32px;
+    width: 60%;
+    height: 65%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downloader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.developers{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horiContainer{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    gap:2vh;
+    margin-bottom: 2vh;
+}
+
+.tcard{
+    width: 20%;
+    height: 100%;
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hoverfx{
+    padding: 1rem;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000ce;
+    z-index: 5;
+    transition: top 0.4s ease-in-out;
+}
+
+.tcard:hover .hoverfx {
+    top: 0; 
+}
+
+.tcard h3{
+    padding: 0;
+    margin: 0;
+}
+
+.t1{
+    background-image: url(res/devs/myron.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.t2{
+    background-image: url(res/devs/jerome.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.t3{
+    background-image: url(res/devs/jettt.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.t4{
+    background-image: url(res/devs/ban.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.t5{
+    background-image: url(res/devs/aki.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.t6{
+    background-image: url(res/devs/mj.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
